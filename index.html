@@ -1,0 +1,37 @@
+<html>
+ <title>Project 78</title>
+ <center style="margin-top: 40px;">
+    <h1>
+        My Family Book
+    </h1>
+
+    <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" style="width: 30%;" id="pic">
+   
+  <h4 id="name"></h4>
+    
+  <button onclick="update();">Next</button>
+</center>
+</body>   
+    <script>
+        
+        
+            var names = ["Emma","Saif","Sonu","Jaicob"]
+            var image = ["https://p.kindpng.com/picc/s/150-1500029_girls-girl-dancing-kids-scrapbook-cartoon-kid.png","https://en.pimg.jp/040/385/499/1/40385499.jpg","https://image.shutterstock.com/image-vector/working-mom-260nw-158801603.jpg","https://cdn2.vectorstock.com/i/1000x1000/00/06/teen-boy-character-avatar-vector-11360006.jpg"]
+
+            var i = 0;
+function update()
+{
+     i++;
+     var numbers_of_family_member_in_array = 4;
+     if(i > numbers_of_family_member_in_array )
+     {
+        i = 0;
+     }
+     var updatedImage = image[i];
+     var updatedName  = names[i];
+     document.getElementById("pic").src = updatedImage;
+     document.getElementById("name").innerHTML = updatedName; 
+}
+
+   </script>
+</html>
